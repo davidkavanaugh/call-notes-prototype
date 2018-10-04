@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+body{
+  padding: 15px;
+}
+
+#side-buttons{
+  padding: 3px;
+  background-color: #eeeeee;
+  position: fixed;
+  right: 15px;
+  border-radius: 5px;
+
+}
+
+#side-buttons img{
+  width: 50px;
+  padding:6px;
+  margin:3px;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  -moz-box-shadow:    0 0 10px #999999;
+  -webkit-box-shadow: 0 0 10px #999999;
+  box-shadow:         0 0 10px #999999;
+  transition:
+    -moz-boxshadow 0.2s,
+    -webkit-box-shadow 0.2s,
+    box-shadow 0.2s;
+}
+
+#side-buttons img:hover{
+  cursor: pointer;
+  -moz-box-shadow:     0 0 2px #999999;
+  -webkit-box-shadow:  0 0 2px #999999;
+  box-shadow:         0 0 2px #999999;
+}
+
+#side-buttons img:active{
+  -moz-box-shadow:    inset 0 0 10px #999999;
+  -webkit-box-shadow: inset 0 0 10px #999999;
+  box-shadow:         inset 0 0 10px #999999;
+}
+
+
+mat-form-field{
+  width: 75%;
+}
+
+.main-textbox{
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  -moz-box-shadow:    inset 0 0 10px #999999;
+  -webkit-box-shadow: inset 0 0 10px #999999;
+  box-shadow:         inset 0 0 10px #999999;
+  min-height: 50px;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.additional-comments{
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  -moz-box-shadow:    inset 0 0 10px #999999;
+  -webkit-box-shadow: inset 0 0 10px #999999;
+  box-shadow:         inset 0 0 10px #999999;
+  min-height: 15px;
+  margin-top: 0;
+
+}
+
+.textbox-title{
+color: #888888;
+font-family: 'Roboto', sans-serif;
+font-size: 0.8em;
+}
