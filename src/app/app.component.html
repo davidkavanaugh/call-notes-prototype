@@ -1,5 +1,5 @@
 <div id="side-buttons" class ="mat-elevation-z5">
-<img src="../assets/images/copytoclipboard.png" alt="copy to clipboard"><br />
+<img src="../assets/images/copytoclipboard.png" alt="copy to clipboard" class="copybtn" data-clipboard-target=".textbox" onclick="copyToClipboard()"><br />
 <img src="../assets/images/redx.png" alt="clear form">
 </div>
 
@@ -82,20 +82,10 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
+</form>
 
   <br />
   <span class="textbox-title">Press Cntrl C to copy; Press Esc to clear.</span>
-  <p class="main-textbox" contenteditable="true">
-    {{selectedValue1}}
-    {{selectedValue2}}
-    {{selectedValue3}}
-    {{selectedValue4}}
-    {{selectedValue5}}
-    {{selectedValue6}}
-    {{selectedValue7}}
-    {{selectedValue8}}
-
-  </p>
+  <p id="main-textbox" class="textbox" type="text" contenteditable="true">{{selectedValue1}} {{selectedValue2}} {{selectedValue3}} {{selectedValue4}} {{selectedValue5}} {{selectedValue6}} {{selectedValue7}} {{selectedValue8}}</p>
   <span class="textbox-title">Additional Comments:</span>
-  <p class="additional-comments" contenteditable="true"></p>
-</form>
+  <p id="additional-comments" class="textbox" type="text" contenteditable="true"></p>
