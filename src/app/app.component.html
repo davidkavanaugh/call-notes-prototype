@@ -1,12 +1,6 @@
 <div id="side-buttons" class ="mat-elevation-z5">
-
-
-<img src="../assets/images/copytoclipboard.png" onclick="copyToClipboard()" alt="Copy to clipboard" matTooltip="Copy"
-matTooltipPosition="left"
-aria-label="Button that displays a tooltip when focused or hovered over"><br />
-<img src="../assets/images/redx.png" alt="clear form" onclick="reset()" matTooltip="Clear"
-matTooltipPosition="left"
-aria-label="Button that displays a tooltip when focused or hovered over">
+  <app-copybtn></app-copybtn>
+  <app-clearbtn></app-clearbtn>
 </div>
 
 <form id="form">
@@ -83,8 +77,3 @@ aria-label="Button that displays a tooltip when focused or hovered over">
   <p id="notes"  type="text">{{selectedValue1}} {{selectedValue2}} {{selectedValue3}} {{selectedValue4}} {{selectedValue5}} {{selectedValue6}} {{selectedValue7}} {{selectedValue8}}</p>
   <span class="textbox-title">Additional Comments:</span>
   <p id="additional-comments"  type="text" contenteditable="true"></p>
-
-
-  <button>
-click me
-  </button>

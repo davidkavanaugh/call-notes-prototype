@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
-import { MatInputModule, MatFormFieldModule, MatSelectModule, MatOptionModule } from '@angular/material';
+import { MatInputModule, MatFormFieldModule, MatSelectModule, MatOptionModule, MatSnackBarModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { SnackbardemoComponent } from './snackbardemo/snackbardemo.component';
+import { CopybtnComponent } from './buttons/copybtn/copybtn.component';
+import { ClearbtnComponent } from './buttons/clearbtn/clearbtn.component';
+import { FormFieldsComponent } from './form-fields/form-fields.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SnackbardemoComponent,
+    CopybtnComponent,
+    ClearbtnComponent,
+    FormFieldsComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +30,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     ReactiveFormsModule,
     MatSelectModule,
     MatOptionModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
