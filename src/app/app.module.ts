@@ -5,6 +5,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { MatInputModule, MatFormFieldModule, MatSelectModule, MatOptionModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatOptionModule
+    MatOptionModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

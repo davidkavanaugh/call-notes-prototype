@@ -21,4 +21,3 @@ function reset(){
   document.getElementById("form").reset();
   document.getElementById("additional-comments").innerHTML="";
 }
-
