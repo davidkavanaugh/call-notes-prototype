@@ -3,11 +3,11 @@ import {MatSnackBar} from '@angular/material';
 
 
 @Component({
-  selector: 'app-snackbardemo',
-  templateUrl: './snackbardemo.component.html',
-  styleUrls: ['./snackbardemo.component.css']
+  selector: 'app-snackbar',
+  templateUrl: './snackbar.component.html',
+  styleUrls: ['./snackbar.component.css']
 })
-export class SnackbardemoComponent implements OnInit {
+export class SnackbarComponent implements OnInit {
 
   constructor(public snackBar: MatSnackBar) {}
 
@@ -18,4 +18,5 @@ export class SnackbardemoComponent implements OnInit {
       duration: 2000,
     });
 
+}
 }

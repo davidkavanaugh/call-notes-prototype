@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MatInputModule, MatFormFieldModule, MatSelectModule, MatOptionModule, MatSnackBarModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { SnackbardemoComponent } from './snackbardemo/snackbardemo.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 import { CopybtnComponent } from './buttons/copybtn/copybtn.component';
 import { ClearbtnComponent } from './buttons/clearbtn/clearbtn.component';
 import { FormFieldsComponent } from './form-fields/form-fields.component';
@@ -15,7 +15,7 @@ import { FormFieldsComponent } from './form-fields/form-fields.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SnackbardemoComponent,
+    SnackbarComponent,
     CopybtnComponent,
     ClearbtnComponent,
     FormFieldsComponent
