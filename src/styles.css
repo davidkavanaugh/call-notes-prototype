@@ -116,3 +116,7 @@ font-size: 0.8em;
   visibility: visible;
   opacity: 1;
 }
+
+.center-text{
+  text-align: center !important;
+}

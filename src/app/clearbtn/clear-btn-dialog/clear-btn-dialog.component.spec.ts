@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormFieldsComponent } from './form-fields.component';
+import { ClearBtnDialogComponent } from './clear-btn-dialog.component';
 
-describe('FormFieldsComponent', () => {
-  let component: FormFieldsComponent;
-  let fixture: ComponentFixture<FormFieldsComponent>;
+describe('ClearBtnDialogComponent', () => {
+  let component: ClearBtnDialogComponent;
+  let fixture: ComponentFixture<ClearBtnDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormFieldsComponent ]
+      declarations: [ ClearBtnDialogComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormFieldsComponent);
+    fixture = TestBed.createComponent(ClearBtnDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
