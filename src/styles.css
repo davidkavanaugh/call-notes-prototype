@@ -4,46 +4,46 @@ body{
 }
 
 #side-buttons{
-  padding: 3px;
-  background-color: #eeeeee;
+  padding: 15px;
   position: fixed;
-  right: 15px;
-  border-radius: 5px;
+  z-index: 2;
+  right: 0;
+  top:0;
 
 }
 
 #side-buttons img{
-  width: 50px;
+  position: relative;
+  z-index: 2;
+  width: 42px;
   padding:6px;
-  margin:3px;
-  background-color: #fcfcfc;
-  border-radius: 5px;
-  -moz-box-shadow:    0 0 10px #999999;
-  -webkit-box-shadow: 0 0 10px #999999;
-  box-shadow:         0 0 10px #999999;
-  transition:
-    -moz-boxshadow 0.2s,
-    -webkit-box-shadow 0.2s,
-    box-shadow 0.2s;
+  margin: 7px 3px 7px 3px;
+  border-radius: 50%;
+  opacity: .9;
+  background-color: #ffffff;
+  transition: opacity 0.2s;
+  transition: width 0.2s;
+  -moz-box-shadow:     0 0 7px #999999;
+  -webkit-box-shadow:  0 0 7px #999999;
+  box-shadow:          0 0 7px #999999;
 }
 
 #side-buttons img:hover{
   cursor: pointer;
-  -moz-box-shadow:     0 0 2px #999999;
-  -webkit-box-shadow:  0 0 2px #999999;
-  box-shadow:         0 0 2px #999999;
-  opacity: 0.7;
-
+  opacity: 1;
+  width: 50px;
 }
 
 #side-buttons img:active{
-  -moz-box-shadow:    inset 0 0 10px #999999;
-  -webkit-box-shadow: inset 0 0 10px #999999;
-  box-shadow:         inset 0 0 10px #999999;
+  -moz-box-shadow:    inset 0 0 7px #999999;
+  -webkit-box-shadow:  inset 0 0 7px #999999;
+  box-shadow:          inset 0 0 7px #999999;
 }
 
 mat-form-field{
-  width: 75%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -125,19 +125,33 @@ font-size: 0.8em;
 
 #settings{
   position: fixed;
+  z-index: 2;
   right: 0;
   bottom: 0;
   padding: 5px;
   width: 40px;
   opacity: 0.2;
   transition: opacity 0.2s;
+  transition: width 0.2s;
 }
 
 #settings:hover{
 cursor: pointer;
 opacity: 0.6;
+width: 50px;
 }
 
 #settings:active{
   opacity: 1;
+}
+
+.center-text{
+text-align: center;
+}
+
+.mat-snack-bar-container,
+.mat-tooltip,
+.mat-button,
+.mat-dialog-container{
+  border-radius: 6px !important;
 }
