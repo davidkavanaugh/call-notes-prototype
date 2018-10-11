@@ -24,4 +24,8 @@ export class ClearBtnDialogComponent implements OnInit {
     this.dialogRef.close();
   }
 
+  closeDialog() {
+    this.dialogRef.close();
+  }
 }
+

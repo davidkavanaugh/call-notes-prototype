@@ -17,4 +17,5 @@ export class CopybtnComponent implements OnInit {
       duration: 1500,
     });
 
-}}
+}
+}
