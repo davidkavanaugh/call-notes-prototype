@@ -2,18 +2,18 @@
   <h2>Settings</h2>
 
     <mat-form-field>
-      <input matInput placeholder="Username" [formControl]="username" required>
+      <input id ="username" value="" matInput placeholder="username" [formControl]="username" required>
       <mat-error *ngIf="username.invalid">{{getErrorMessage()}}</mat-error>
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Password" [formControl]="password" required>
+      <input id="password" value="" type="password" matInput placeholder="password" name="password" [formControl]="password" required>
       <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
     </mat-form-field>
 
 
 
-  <button mat-button color="primary" (click)="closeDialog()">Login</button>
+  <button mat-button color="primary" value="Login" id="submit" onclick="login()">Login</button>
 
   <button mat-button (click)="closeDialog()">Cancel</button>
 </div>

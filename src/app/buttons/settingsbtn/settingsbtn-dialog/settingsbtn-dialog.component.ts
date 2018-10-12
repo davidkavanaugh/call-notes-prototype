@@ -27,6 +27,7 @@ export class SettingsbtnDialogComponent implements OnInit {
     return this.username.hasError('required') ? 'You must enter a value' :
             '';
   }
+
   onNoClick(): void {
     this.dialogRef.close();
   }
