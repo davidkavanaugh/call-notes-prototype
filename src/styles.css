@@ -23,9 +23,6 @@ body{
   background-color: #ffffff;
   transition: opacity 0.2s;
   transition: width 0.2s;
-  -moz-box-shadow:     0 0 7px #999999;
-  -webkit-box-shadow:  0 0 7px #999999;
-  box-shadow:          0 0 7px #999999;
 }
 
 #side-buttons img:hover{
@@ -155,3 +152,14 @@ text-align: center;
 .mat-dialog-container{
   border-radius: 6px !important;
 }
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+.mat-dialog-container{
+  max-width: 350px;
+}
+

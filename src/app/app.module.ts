@@ -11,6 +11,8 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { CopybtnComponent } from './buttons/copybtn/copybtn.component';
 import { ClearbtnComponent } from './buttons/clearbtn/clearbtn.component';
 import { ClearBtnDialogComponent } from './buttons/clearbtn/clear-btn-dialog/clear-btn-dialog.component';
+import { SettingsbtnComponent } from './buttons/settingsbtn/settingsbtn.component';
+import { SettingsbtnDialogComponent } from './buttons/settingsbtn/settingsbtn-dialog/settingsbtn-dialog.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ClearBtnDialogComponent } from './buttons/clearbtn/clear-btn-dialog/cle
     SnackbarComponent,
     CopybtnComponent,
     ClearbtnComponent,
-    ClearBtnDialogComponent
+    ClearBtnDialogComponent,
+    SettingsbtnComponent,
+    SettingsbtnDialogComponent
     ],
   imports: [
     BrowserModule,
@@ -37,7 +41,8 @@ import { ClearBtnDialogComponent } from './buttons/clearbtn/clear-btn-dialog/cle
 
   ],
   entryComponents: [
-    ClearBtnDialogComponent
+    ClearBtnDialogComponent,
+    SettingsbtnDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

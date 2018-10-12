@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClearBtnDialogComponent } from './clear-btn-dialog.component';
+import { SettingsbtnComponent } from './settingsbtn.component';
 
-describe('ClearBtnDialogComponent', () => {
-  let component: ClearBtnDialogComponent;
-  let fixture: ComponentFixture<ClearBtnDialogComponent>;
+describe('SettingsbtnComponent', () => {
+  let component: SettingsbtnComponent;
+  let fixture: ComponentFixture<SettingsbtnComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ClearBtnDialogComponent ]
+      declarations: [ SettingsbtnComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ClearBtnDialogComponent);
+    fixture = TestBed.createComponent(SettingsbtnComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,19 @@
+<div class="center-text">
+  <h2>Settings</h2>
+
+    <mat-form-field>
+      <input matInput placeholder="Username" [formControl]="username" required>
+      <mat-error *ngIf="username.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Password" [formControl]="password" required>
+      <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+
+
+  <button mat-button color="primary" (click)="closeDialog()">Login</button>
+
+  <button mat-button (click)="closeDialog()">Cancel</button>
+</div>
