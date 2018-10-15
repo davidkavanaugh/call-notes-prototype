@@ -1,0 +1,42 @@
+<mat-vertical-stepper [linear]="!isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Question Type</ng-template>
+      <mat-form-field>
+        <mat-select placeholder="Select" formControlName="firstCtrl" required>
+          <mat-option value="option">Multiple Choice</mat-option>
+          <mat-option value="option">Yes/No</mat-option>
+          <mat-option value="option">Text Input</mat-option>
+
+        </mat-select>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Type Your Question</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Question?" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Type Your Answers</ng-template>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Answer1" value="">
+      </mat-form-field>
+    </form>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-vertical-stepper>

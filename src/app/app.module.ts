@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { MatInputModule, MatFormFieldModule, MatSelectModule, MatOptionModule, MatSnackBarModule } from '@angular/material';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatStepperModule } from '@angular/material';
+import {MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { SnackbarComponent } from './home/snackbar/snackbar.component';
@@ -16,6 +17,8 @@ import { SettingsbtnDialogComponent } from './home/buttons/settingsbtn/settingsb
 import { AppRoutingModule } from './app-routing.module';
 import { SettingsComponent } from './settings/settings.component';
 import { HomeComponent } from './home/home.component';
+import { AddbtnComponent } from './settings/buttons/addbtn/addbtn.component';
+import { AddbtnDialogComponent } from './settings/buttons/addbtn/addbtn-dialog/addbtn-dialog.component';
 
 
 @NgModule({
@@ -28,7 +31,9 @@ import { HomeComponent } from './home/home.component';
     SettingsbtnComponent,
     SettingsbtnDialogComponent,
     SettingsComponent,
-    HomeComponent
+    HomeComponent,
+    AddbtnComponent,
+    AddbtnDialogComponent
     ],
   imports: [
     BrowserModule,
@@ -43,12 +48,14 @@ import { HomeComponent } from './home/home.component';
     MatTooltipModule,
     MatSnackBarModule,
     MatDialogModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatStepperModule
 
   ],
   entryComponents: [
     ClearBtnDialogComponent,
-    SettingsbtnDialogComponent
+    SettingsbtnDialogComponent,
+    AddbtnDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
