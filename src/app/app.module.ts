@@ -7,12 +7,15 @@ import { MatInputModule, MatFormFieldModule, MatSelectModule, MatOptionModule, M
 import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { SnackbarComponent } from './snackbar/snackbar.component';
-import { CopybtnComponent } from './buttons/copybtn/copybtn.component';
-import { ClearbtnComponent } from './buttons/clearbtn/clearbtn.component';
-import { ClearBtnDialogComponent } from './buttons/clearbtn/clear-btn-dialog/clear-btn-dialog.component';
-import { SettingsbtnComponent } from './buttons/settingsbtn/settingsbtn.component';
-import { SettingsbtnDialogComponent } from './buttons/settingsbtn/settingsbtn-dialog/settingsbtn-dialog.component';
+import { SnackbarComponent } from './home/snackbar/snackbar.component';
+import { CopybtnComponent } from './home/buttons/copybtn/copybtn.component';
+import { ClearbtnComponent } from './home/buttons/clearbtn/clearbtn.component';
+import { ClearBtnDialogComponent } from './home/buttons/clearbtn/clear-btn-dialog/clear-btn-dialog.component';
+import { SettingsbtnComponent } from './home/buttons/settingsbtn/settingsbtn.component';
+import { SettingsbtnDialogComponent } from './home/buttons/settingsbtn/settingsbtn-dialog/settingsbtn-dialog.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SettingsComponent } from './settings/settings.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -23,7 +26,9 @@ import { SettingsbtnDialogComponent } from './buttons/settingsbtn/settingsbtn-di
     ClearbtnComponent,
     ClearBtnDialogComponent,
     SettingsbtnComponent,
-    SettingsbtnDialogComponent
+    SettingsbtnDialogComponent,
+    SettingsComponent,
+    HomeComponent
     ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import { SettingsbtnDialogComponent } from './buttons/settingsbtn/settingsbtn-di
     MatOptionModule,
     MatTooltipModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    AppRoutingModule
 
   ],
   entryComponents: [

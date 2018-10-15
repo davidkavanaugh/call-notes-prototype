@@ -1,0 +1,81 @@
+<div id="side-buttons">
+    <app-copybtn></app-copybtn>
+    <app-clearbtn></app-clearbtn>
+  </div>
+  <form id="form">
+    <mat-form-field>
+      <mat-select placeholder="Are you the primary policy holder?" [(ngModel)]="selectedValue1" name="question1">
+        <mat-option *ngFor="let response of question1" [value]="response.value">
+          {{response.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="What is the primary reason for your phonecall?" [(ngModel)]="selectedValue2" name="question2">
+        <mat-option *ngFor="let response of question2" [value]="response.value">
+          {{response.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Another question here..." [(ngModel)]="selectedValue3" name="question3">
+          <mat-option *ngFor="let response of question3" [value]="response.value">
+            {{response.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <mat-form-field>
+        <mat-select placeholder="Another question here..." [(ngModel)]="selectedValue4" name="question4">
+          <mat-option *ngFor="let response of question4" [value]="response.value">
+            {{response.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+        <mat-form-field>
+          <mat-select placeholder="Another question here..." [(ngModel)]="selectedValue5" name="question5">
+            <mat-option *ngFor="let response of question5" [value]="response.value">
+              {{response.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field>
+          <mat-select placeholder="Another question here..." [(ngModel)]="selectedValue6" name="question6">
+            <mat-option *ngFor="let response of question6" [value]="response.value">
+              {{response.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+          <mat-form-field>
+            <mat-select placeholder="Another question here..." [(ngModel)]="selectedValue7" name="question7">
+              <mat-option *ngFor="let response of question7" [value]="response.value">
+                {{response.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+          <mat-form-field>
+            <mat-select placeholder="Another question here..." [(ngModel)]="selectedValue8" name="question8">
+              <mat-option *ngFor="let response of question8" [value]="response.value">
+                {{response.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+  </form>
+    <br />
+    <span class="textbox-title">Notes:</span>
+    <p id="notes"  type="text">{{selectedValue1}} {{selectedValue2}} {{selectedValue3}} {{selectedValue4}} {{selectedValue5}} {{selectedValue6}} {{selectedValue7}} {{selectedValue8}}</p>
+    <span class="textbox-title">Additional Comments:</span>
+    <p id="additional-comments"  type="text" contenteditable="true"></p>
+
+
+
+  <app-settingsbtn></app-settingsbtn>
