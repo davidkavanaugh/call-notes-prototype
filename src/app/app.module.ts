@@ -29,7 +29,9 @@ import { SavebtnComponent } from './settings/buttons/savebtn/savebtn.component';
 import { DeletebtnDialogComponent } from './settings/buttons/deletebtn/deletebtn-dialog/deletebtn-dialog.component';
 import { EditbtnDialogComponent } from './settings/buttons/editbtn/editbtn-dialog/editbtn-dialog.component';
 import { SavebtnDialogComponent } from './settings/buttons/savebtn/savebtn-dialog/savebtn-dialog.component';
-
+import { RestorebtnComponent } from './settings/buttons/restorebtn/restorebtn.component';
+import { RestorebtnDialogComponent } from './settings/buttons/restorebtn/restorebtn-dialog/restorebtn-dialog.component';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { SavebtnDialogComponent } from './settings/buttons/savebtn/savebtn-dialo
     SavebtnComponent,
     DeletebtnDialogComponent,
     EditbtnDialogComponent,
-    SavebtnDialogComponent
+    SavebtnDialogComponent,
+    RestorebtnComponent,
+    RestorebtnDialogComponent
     ],
   imports: [
     BrowserModule,
@@ -70,14 +74,16 @@ import { SavebtnDialogComponent } from './settings/buttons/savebtn/savebtn-dialo
     MatStepperModule,
     MatRadioModule,
     MatIconModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatBottomSheetModule
 
   ],
   entryComponents: [
     ClearBtnDialogComponent,
     SettingsbtnDialogComponent,
     AddbtnDialogComponent,
-    AddMultipleChoiceComponent
+    AddMultipleChoiceComponent,
+    RestorebtnDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
