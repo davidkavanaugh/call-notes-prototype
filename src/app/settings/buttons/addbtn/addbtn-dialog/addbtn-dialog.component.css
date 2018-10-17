@@ -7,3 +7,34 @@
 .example-full-width {
   width: 100%;
 }
+
+.settings-radiobtn{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#addbtn{
+  opacity: .7;
+  transition: opacity .2s
+}
+#addbtn:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.example-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.example-selected-value {
+  margin: 15px 0;
+}
+
+#question-types{
+  text-align: center;
+}

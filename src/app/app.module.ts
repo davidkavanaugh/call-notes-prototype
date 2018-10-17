@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
-import { MatInputModule, MatFormFieldModule, MatSelectModule, MatOptionModule, MatSnackBarModule } from '@angular/material';
+import { MatInputModule, MatFormFieldModule, MatSelectModule, MatOptionModule, MatSnackBarModule, MatIconModule } from '@angular/material';
 import { MatStepperModule } from '@angular/material';
 import {MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -19,6 +19,16 @@ import { SettingsComponent } from './settings/settings.component';
 import { HomeComponent } from './home/home.component';
 import { AddbtnComponent } from './settings/buttons/addbtn/addbtn.component';
 import { AddbtnDialogComponent } from './settings/buttons/addbtn/addbtn-dialog/addbtn-dialog.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { AddMultipleChoiceComponent } from './settings/buttons/addbtn/add-multiple-choice/add-multiple-choice.component';
+import { AddTextInputComponent } from './settings/buttons/addbtn/add-text-input/add-text-input.component';
+import { EditbtnComponent } from './settings/buttons/editbtn/editbtn.component';
+import { DeletebtnComponent } from './settings/buttons/deletebtn/deletebtn.component';
+import { SavebtnComponent } from './settings/buttons/savebtn/savebtn.component';
+import { DeletebtnDialogComponent } from './settings/buttons/deletebtn/deletebtn-dialog/deletebtn-dialog.component';
+import { EditbtnDialogComponent } from './settings/buttons/editbtn/editbtn-dialog/editbtn-dialog.component';
+import { SavebtnDialogComponent } from './settings/buttons/savebtn/savebtn-dialog/savebtn-dialog.component';
 
 
 @NgModule({
@@ -33,7 +43,15 @@ import { AddbtnDialogComponent } from './settings/buttons/addbtn/addbtn-dialog/a
     SettingsComponent,
     HomeComponent,
     AddbtnComponent,
-    AddbtnDialogComponent
+    AddbtnDialogComponent,
+    AddMultipleChoiceComponent,
+    AddTextInputComponent,
+    EditbtnComponent,
+    DeletebtnComponent,
+    SavebtnComponent,
+    DeletebtnDialogComponent,
+    EditbtnDialogComponent,
+    SavebtnDialogComponent
     ],
   imports: [
     BrowserModule,
@@ -49,13 +67,17 @@ import { AddbtnDialogComponent } from './settings/buttons/addbtn/addbtn-dialog/a
     MatSnackBarModule,
     MatDialogModule,
     AppRoutingModule,
-    MatStepperModule
+    MatStepperModule,
+    MatRadioModule,
+    MatIconModule,
+    MatCheckboxModule
 
   ],
   entryComponents: [
     ClearBtnDialogComponent,
     SettingsbtnDialogComponent,
-    AddbtnDialogComponent
+    AddbtnDialogComponent,
+    AddMultipleChoiceComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
