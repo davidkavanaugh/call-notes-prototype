@@ -193,6 +193,17 @@ h2{
   text-align: center;
 cursor: pointer;
 border-radius: 5px;
-padding: 17px;
 margin: 5px;
+transition: padding 0.3s;
+padding: 17px;
+}
+
+.editor-buttons:hover{
+  padding: 20px;
+}
+
+.editor-buttons:active{
+  -moz-box-shadow:    inset 0 0 7px #999999;
+  -webkit-box-shadow:  inset 0 0 7px #999999;
+  box-shadow:          inset 0 0 7px #999999;
 }
