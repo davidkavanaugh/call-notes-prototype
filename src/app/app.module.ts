@@ -32,6 +32,8 @@ import { SavebtnDialogComponent } from './settings/buttons/savebtn/savebtn-dialo
 import { RestorebtnComponent } from './settings/buttons/restorebtn/restorebtn.component';
 import { RestorebtnDialogComponent } from './settings/buttons/restorebtn/restorebtn-dialog/restorebtn-dialog.component';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatListModule} from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -75,7 +77,8 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     MatRadioModule,
     MatIconModule,
     MatCheckboxModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatListModule
 
   ],
   entryComponents: [
