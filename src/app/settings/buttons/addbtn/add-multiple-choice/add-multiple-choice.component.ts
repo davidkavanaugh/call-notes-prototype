@@ -29,6 +29,7 @@ export class AddMultipleChoiceComponent implements OnInit {
       this.secondFormGroup = this._formBuilder.group({
         secondCtrl: ['', Validators.required]
       });
+
     }
 
   onNoClick(): void {
@@ -38,4 +39,5 @@ export class AddMultipleChoiceComponent implements OnInit {
   closeDialog() {
     this.dialogRef.close();
   }
+
 }

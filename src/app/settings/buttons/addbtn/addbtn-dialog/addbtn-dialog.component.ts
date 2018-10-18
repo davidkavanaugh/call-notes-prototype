@@ -5,8 +5,8 @@ import { AddMultipleChoiceComponent } from '../add-multiple-choice/add-multiple-
 import { MatDialog } from '@angular/material';
 
 export interface DialogData {
-  animal: string;
   name: string;
+  answer: string;
 }
 
 
@@ -33,6 +33,7 @@ export class AddbtnDialogComponent implements OnInit {
       this.secondFormGroup = this._formBuilder.group({
         secondCtrl: ['', Validators.required]
       });
+
     }
     addMultipleChoice(): void {
       const dialogRef = this.dialog.open(AddMultipleChoiceComponent, {
@@ -49,5 +50,7 @@ export class AddbtnDialogComponent implements OnInit {
   closeDialog() {
     this.dialogRef.close();
   }
+
+
 }
 
