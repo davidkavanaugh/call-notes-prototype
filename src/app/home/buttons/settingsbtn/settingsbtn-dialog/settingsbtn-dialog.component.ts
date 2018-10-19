@@ -23,6 +23,7 @@ export class SettingsbtnDialogComponent implements OnInit {
   ngOnInit() {
   }
 
+
   getErrorMessage() {
     return this.username.hasError('required') ? 'You must enter a value' :
             '';
@@ -35,4 +36,5 @@ export class SettingsbtnDialogComponent implements OnInit {
   closeDialog() {
     this.dialogRef.close();
   }
+
 }

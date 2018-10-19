@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 
 export interface DialogData {
   animal: string;
@@ -16,6 +16,8 @@ export class AddMultipleChoiceComponent implements OnInit {
   isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  answer = new FormControl('');
+
 
   constructor(
     public dialogRef: MatDialogRef<AddMultipleChoiceComponent>,

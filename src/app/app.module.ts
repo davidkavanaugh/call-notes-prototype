@@ -33,7 +33,6 @@ import { RestorebtnComponent } from './settings/buttons/restorebtn/restorebtn.co
 import { RestorebtnDialogComponent } from './settings/buttons/restorebtn/restorebtn-dialog/restorebtn-dialog.component';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatListModule} from '@angular/material/list';
-import { AddAnswerComponent } from './settings/buttons/addbtn/add-multiple-choice/add-answer/add-answer.component';
 
 
 @NgModule({
@@ -58,8 +57,7 @@ import { AddAnswerComponent } from './settings/buttons/addbtn/add-multiple-choic
     EditbtnDialogComponent,
     SavebtnDialogComponent,
     RestorebtnComponent,
-    RestorebtnDialogComponent,
-    AddAnswerComponent
+    RestorebtnDialogComponent
     ],
   imports: [
     BrowserModule,
