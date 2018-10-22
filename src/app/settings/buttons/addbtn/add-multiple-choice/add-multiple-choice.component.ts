@@ -23,7 +23,6 @@ export class AddMultipleChoiceComponent implements OnInit {
     public dialogRef: MatDialogRef<AddMultipleChoiceComponent>,
     private _formBuilder: FormBuilder,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
-
     ngOnInit() {
       this.firstFormGroup = this._formBuilder.group({
         firstCtrl: ['', Validators.required]
@@ -34,6 +33,7 @@ export class AddMultipleChoiceComponent implements OnInit {
 
     }
 
+
   onNoClick(): void {
     this.dialogRef.close();
   }
@@ -41,5 +41,4 @@ export class AddMultipleChoiceComponent implements OnInit {
   closeDialog() {
     this.dialogRef.close();
   }
-
 }

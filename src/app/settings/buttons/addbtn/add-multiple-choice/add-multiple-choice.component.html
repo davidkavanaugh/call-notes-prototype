@@ -15,22 +15,20 @@
       <form [formGroup]="secondFormGroup">
           <ng-template matStepLabel>Answers</ng-template>
           <mat-form-field class="example-full-width">
-              <input id="answer" matInput formControlName="formcontrolname" placeholder="Type an Answer" value="" type="text" [formControl]="answer">
+            <input matInput placeholder="Answer" formControlName="secondCtrl" required>
             </mat-form-field>
 
 
-            <button mat-button color="primary" id="add-answer" [disabled]="!formcontrolname.value">
-              <mat-icon id="addbtn">add</mat-icon>
-              Add Another Answer
-            </button>
+            <button mat-button color="primary" id="add-answer">
+              <mat-icon id="addbtnicon" (click)="addAnswer()">add</mat-icon>Add Another Answer</button>
 
 
             <br /><br />
             <mat-checkbox>Other</mat-checkbox>
             <br /><br />
                       <div>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button matStepperNext>Next</button>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext>Next</button>
           </div>
       </form>
     </mat-step>
